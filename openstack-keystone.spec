@@ -15,7 +15,7 @@ Group:          Development/Languages/Python
 Source0:          http://openstack-keystone.openstack.org/tarballs/%{name}-%{version}.tar.gz  
 Source1:        %{name}.init
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
-BuildRequires:  python-devel python-setuptools python-sphinx >= 0.6.0
+BuildRequires:  python-devel python-setuptools >= 0.6.0
 BuildArch:      noarch
 Requires:       python-eventlet python-lxml python-paste python-sqlalchemy python-routes python-httplib2 python-paste-deploy start-stop-daemon python-webob python-setuptools
 
@@ -35,7 +35,8 @@ python setup.py build
 %install
 %__rm -rf %{buildroot}
 
-%__make -C doc/ html PYTHONPATH=%{_builddir}/%{name}-%{version}
+# Don't make documentation
+# %__make -C doc/ html PYTHONPATH=%{_builddir}/%{name}-%{version}
 python setup.py install --prefix=%{_prefix} --root=%{buildroot}
 
 install -d -m 755 %{buildroot}%{_sysconfdir}/%{mod_name}
