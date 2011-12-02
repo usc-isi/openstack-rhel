@@ -8,7 +8,7 @@ Name:           openstack-keystone
 Release:	0.20110921.1726%{?dist}
 Version:	1.0
 Url:            http://www.openstack.org
-Summary:        Python bindings to the OS API
+Summary:        OpenStack Identity Service
 License:        Apache 2.0
 Vendor:         Grid Dynamics Consulting Services, Inc.
 Group:          Development/Languages/Python
@@ -20,7 +20,9 @@ BuildArch:      noarch
 Requires:       python-eventlet python-lxml python-paste python-sqlalchemy python-routes python-httplib2 python-paste-deploy start-stop-daemon python-webob python-setuptools
 
 %description
-Authentication service - proposed for OpenStack
+The Keystone project provides services for authenticating and managing user,
+account, and role information for OpenStack clouds running on OpenStack
+Compute and as an authorization service for OpenStack Object Storage.
 
 %prep
 %setup -q -n %{name}-%{version}
