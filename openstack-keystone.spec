@@ -5,12 +5,12 @@
 %define py_puresitedir  /usr/lib/python2.6/site-packages
 
 Name:           openstack-keystone
-Release:	e2.20111202.1382%{?dist}
+Release:        20111205.1382.5c70d24%{?dist}
 Version:	2012.1
 Url:            http://www.openstack.org
 Summary:        OpenStack Identity Service
 License:        Apache 2.0
-Vendor:         Grid Dynamics Consulting Services, Inc.
+Vendor:         USC/ISI
 Group:          Development/Languages/Python
 Source0:          http://openstack-keystone.openstack.org/tarballs/%{name}-%{version}.tar.gz  
 Source1:        %{name}.init
