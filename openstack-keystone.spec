@@ -17,7 +17,7 @@ Source1:        %{name}.init
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildRequires:  python-devel python-setuptools >= 0.6.0
 BuildArch:      noarch
-Requires:       python-eventlet python-lxml python-paste python-sqlalchemy python-routes python-httplib2 python-paste-deploy start-stop-daemon python-webob python-setuptools
+Requires:       python-eventlet python-lxml python-paste python-sqlalchemy python-routes python-httplib2 python-paste-deploy start-stop-daemon python-webob python-setuptools python-passlib
 
 %description
 The Keystone project provides services for authenticating and managing user,
